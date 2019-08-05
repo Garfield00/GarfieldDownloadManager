@@ -1,0 +1,137 @@
+<resources>
+    
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    
+    <style name="match_match">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    
+    <style name="wrap_wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    <style name="wrap_match">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    
+    <style name="weight_length_vertical">
+        <item name="android:layout_height">0dip</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+    
+    <style name="weight_length_horizontal">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    <style name="ToastTextAppearance">
+        <item name="android:textColor">@android:color/primary_text_dark</item>
+        <item name="android:textColorHighlight">#FFFF9200</item>
+        <item name="android:textColorHint">#808080</item>
+        <item name="android:textColorLink">#5C5CFF</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    
+    <style name="custom_base_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowSoftInputMode">stateUnchanged|adjustResize</item>
+        <!-- <item name="android:gravity">center</item> -->
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+    
+    <style name="CustomDialog" parent="android:Theme.Dialog">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    
+    <style name="tip_dialog_frame">
+        <item name="android:layout_width">280dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/custom_dialog_bg</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    
+    <!--确认对话框弹窗   标题-->
+    <style name="dialog_title_style" parent="@style/wrap_wrap">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">28dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+    </style>
+    
+    <!--确认对话框弹窗   内容-->
+    <style name="dialog_content_style" parent="@style/wrap_wrap">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#666666</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    
+    <style name="dialog_divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/common_line_width</item>
+        <item name="android:background">@color/dialog_divider_line</item>
+    </style>
+    
+    <style name="tip_dialog_divider" parent="@style/dialog_divider">
+        <item name="android:layout_marginTop">23dp</item>
+    </style>
+    
+    <style name="tip_dialog_btns_container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    
+    <style name="tip_dialog_btn_layout" parent="@style/weight_length_horizontal">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/mz_purple</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+    
+    <!--确认对话框弹窗 左边按钮（取消类型）-->
+    <style name="dialog_left_button_style" parent="@style/tip_dialog_btn_layout">
+        <item name="android:textStyle">normal</item>
+    </style>
+    
+    <style name="dialog_btns_divier_vertical">
+        <item name="android:layout_width">@dimen/common_line_width</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/dialog_divider_line</item>
+    </style>
+    
+    <!--确认对话框弹窗 右边边按钮（确认类型）-->
+    <style name="dialog_button_right_style" parent="@style/tip_dialog_btn_layout">
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

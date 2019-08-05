@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">GarfieldDownloadManager</string>
+    
+    <string name="permissions_refused_tips">使用%1$s之前亲需要开启%2$s以确保亲获得完整的使用体验以及信息安全保障哦~</string>
+    
+    <string name="tip_cancel">取消</string>
+    <string name="tip_sure">确定</string>
+    <string name="tip_quit">退出</string>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/tip_dialog_frame">
+
+    <TextView
+        android:id="@+id/txt_title"
+        style="@style/dialog_title_style"
+        android:gravity="center"
+        tools:text="支付成功！" />
+
+    <TextView
+        android:id="@+id/txt_content"
+        style="@style/dialog_content_style"
+        tools:text="商品名称：猫啵猫粮   金额：6.00元" />
+
+    <View style="@style/tip_dialog_divider" />
+
+    <LinearLayout style="@style/tip_dialog_btns_container">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/dialog_left_button_style"
+            android:text="@string/tip_cancel" />
+
+        <View style="@style/dialog_btns_divier_vertical" />
+
+        <Button
+            android:id="@+id/btn_sure"
+            style="@style/dialog_button_right_style"
+            android:text="@string/tip_sure" />
+
+    </LinearLayout>
+
+</LinearLayout>
